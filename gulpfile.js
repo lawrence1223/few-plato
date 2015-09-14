@@ -5,7 +5,7 @@ var plato = require('plato');
 var gulp = require('gulp');
 var fs = require('fs');
 
-var files = process.cwd() + 'app/**/*.js';
+var files = process.cwd() + '/app/**/*.js';
 console.log('cwd');
 console.log(process.cwd());
 console.log('dirname');
