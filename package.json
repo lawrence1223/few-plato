@@ -1,6 +1,6 @@
 {
   "name": "few-plato",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An plato plugin for front-end-work-flow",
   "main": "gulpfile.js",
   "repository": {
