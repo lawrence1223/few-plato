@@ -25,5 +25,8 @@ Usage
 -------
 
 // type this command in console
+
+```
 gulp pondering-muse
 
+```
