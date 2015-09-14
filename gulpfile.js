@@ -6,6 +6,9 @@ var gulp = require('gulp');
 var fs = require('fs');
 
 var files = process.cwd() + '/**/*.js';
+console.log('cwd');
+console.log(process.cwd());
+console.log('dirname');
 console.log(__dirname);
 
 
@@ -29,6 +32,7 @@ var callback = function (report){
 
 // Create the gulp task
 gulp.task('pondering-muse', function() {
+  console.log('still working');
   //var targetFiles = gulp.src(files).pipe();
   return plato.inspect(files, outputDir, {}, callback);
   /*var files = few.files( 'browser' )
@@ -41,5 +45,3 @@ gulp.task('pondering-muse', function() {
    .pipe(eslint.format())
    .pipe(eslint.failOnError());*/
 });
-
-console.log('still working');
