@@ -1,18 +1,12 @@
 'use strict';
 
 var few = require('front-end-work-flow/gulp-tasks/setup.js');
-var plato = require('plato');
 var gulp = require('gulp');
 var fs = require('fs');
-
-var files = process.cwd() + '/app/**/*.js';
 console.log('cwd');
 console.log(process.cwd());
 console.log('dirname');
 console.log(__dirname);
-
-
-var outputDir = __dirname + '/output/plato';
 
 var callback = function (report){
  console.log('Report has been generated.');
@@ -32,9 +26,11 @@ var callback = function (report){
 
 // Create the gulp task
 gulp.task('pondering-muse', function() {
-  console.log('still working');
+  var plato = require('plato');
+  var files = process.cwd() + '/app/**/*.js';
+  var outputDir = process.cwd() + '/output/plato';
   //var targetFiles = gulp.src(files).pipe(few.exclude());
-  return plato.inspect(files, outputDir, {}, callback);
+  plato.inspect(files, outputDir, {}, callback);
   /*var files = few.files( 'browser' )
    .concat( few.files( 'node' ) )
    .concat( few.exclude( 'libraries' ) )
