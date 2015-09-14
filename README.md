@@ -23,9 +23,7 @@ require('few-plato');
 
 Usage
 -------
-
-// type this command in console
-
+Type this command in console
 ```
 gulp pondering-muse
 
