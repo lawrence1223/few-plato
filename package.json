@@ -1,0 +1,25 @@
+{
+  "name": "few-plato",
+  "version": "0.0.1",
+  "description": "An plato plugin for front-end-work-flow",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawrence1223/few-plato.git"
+  },
+  "keywords": [
+    "few",
+    "front-end-work-flow",
+    "lawrence1223",
+    "plato"
+  ],
+  "author": "Lawrence Luo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lawrence1223/few-plato/issues"
+  },
+  "homepage": "https://github.com/lawrence1223/few-plato/#readme",
+  "dependencies": {
+    "plato": "^1.5.0"
+  }
+}
