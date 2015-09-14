@@ -4,16 +4,14 @@ var few = require('front-end-work-flow/gulp-tasks/setup.js');
 var plato = require('plato');
 var gulp = require('gulp');
 var fs = require('fs');
-var R = require('ramda');
 
-var files = process.cwd() + '/' + '**/*.js';
+var files = __dirname + '/**/*.js';
 
-var outputDir = './output/plato';
+var outputDir = __dirname + '/output/plato';
 
 var callback = function (report){
-  console.log('still working');
+ console.log('Report has been generated.');
 };
-
 /*function getConfig() {
  var
  customRcPath = process.cwd() + '/' + few.config( 'eslintrc' ),
@@ -40,3 +38,5 @@ gulp.task('pondering-muse', function() {
    .pipe(eslint.format())
    .pipe(eslint.failOnError());*/
 });
+
+console.log('still working');
