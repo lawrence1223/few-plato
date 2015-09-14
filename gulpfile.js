@@ -5,7 +5,9 @@ var plato = require('plato');
 var gulp = require('gulp');
 var fs = require('fs');
 
-var files = __dirname + '/**/*.js';
+var files = process.cwd() + '/**/*.js';
+console.log(__dirname);
+
 
 var outputDir = __dirname + '/output/plato';
 
@@ -27,6 +29,7 @@ var callback = function (report){
 
 // Create the gulp task
 gulp.task('pondering-muse', function() {
+  //var targetFiles = gulp.src(files).pipe();
   return plato.inspect(files, outputDir, {}, callback);
   /*var files = few.files( 'browser' )
    .concat( few.files( 'node' ) )
