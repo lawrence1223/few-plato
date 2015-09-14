@@ -1,0 +1,5 @@
+#Webstorm file
+.idea
+
+#dependencies
+node_modules
