@@ -24,8 +24,10 @@ gulp.task('pondering-muse', function() {
   few.config('platoPath');
   console.log(few.defaults.root);
   console.log('plato');
-  console.log(few.defaults.platoPath);
+  console.log(few.config('platoPath'));
   outputDir = few.config('platoPath');
-  return gulp.src(files)
-    .pipe(plato.inspect(files, outputDir, {}, callback));
+  /*return gulp.src(files)
+    .pipe(plato.inspect(files, outputDir, {}, callback));*/
+
+  return plato.inspect(files, outputDir, {}, callback);
 });
