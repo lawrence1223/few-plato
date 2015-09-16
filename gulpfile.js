@@ -17,6 +17,8 @@ gulp.task('pondering-muse', function() {
     //files = process.cwd() + '/app/**/*.js',
     //outputDir = process.cwd() + '/output/plato';
   files = few.files( 'browser' )
+    .concat( few.exclude( 'unit' ) )
+    .concat( few.exclude( 'node' ) )
     .concat( few.exclude( 'libraries' ) )
     .concat( few.exclude( 'devLibraries' ) );
   console.log(files);
