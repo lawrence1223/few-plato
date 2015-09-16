@@ -13,7 +13,7 @@ gulp.task('pondering-muse', function() {
     files,
     outputDir,
     plato = require('plato'),
-    few = require('front-end-work-flow/setup.js');
+    few = require('front-end-work-flow/gulp-tasks/setup.js');
     //files = process.cwd() + '/app/**/*.js',
     //outputDir = process.cwd() + '/output/plato';
   files = few.files( 'browser' )
