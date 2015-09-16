@@ -22,6 +22,6 @@ gulp.task('pondering-muse', function() {
   console.log(files);
   few.defaults.platoPath = 'output/plato';
   //few.config('platoPath');
-  outputDir = process.ced() + '/' + few.config('platoPath');
+  outputDir = process.cwd() + '/' + few.config('platoPath');
   return plato.inspect(files, outputDir, {}, callback);
 });
